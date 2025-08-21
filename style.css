@@ -1,0 +1,138 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+body{
+    background-color: hsl(0, 0%, 8%);
+}
+.hero{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    /* display: inline-block; */
+    height:600px;
+    width:400px;
+    border-radius: 7px;
+    background-color: hsl(0, 0%, 12%);
+    position: relative;
+    top: 60px;
+}
+.avatar{
+    height:90px;
+    width:90px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    left: 150px;
+    top: 40px;
+    overflow: hidden;
+}
+.avatar img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.main p1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: relative;
+    top: 60px;
+    position: relative;
+    left: 110px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main p2{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color:hsl(75, 94%, 57%);
+    position: relative;
+    top: 60px;
+    left: 115px;
+    top:65px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main p3{
+    font-size: 1rem;
+    position: relative;
+    top: 90px;
+    position: relative;
+    left: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 50px;
+    width:300px;
+    border: 1px solid white;
+    border-radius: 10px;
+    position: relative;
+    left: 50px;
+    top: 100px;
+    margin-bottom: 15px;
+}
+.box:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.box p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+/* Responsive web */
+
+@media (max-width:400px){
+    .main{
+        height: 530px;
+        width: 350px;
+        position: relative;
+        top: 90px;
+    }
+    .avatar{
+        height:70px;
+        width:70px;
+    }
+    .main p1{
+        font-size: 1.3rem;
+        font-weight: 600;
+        position: relative;
+        top: 60px;
+        position: relative;
+        left: 110px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .main p2{
+        font-size: 0.8rem;
+        font-weight: 600;
+        color:hsl(75, 94%, 57%);
+        position: relative;
+        top: 60px;
+        left: 110px;
+        top:65px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .main p3{
+        font-size: 0.9rem;
+        position: relative;
+        top: 90px;
+        position: relative;
+        left: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        height: 40px;
+        width:250px;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+}
